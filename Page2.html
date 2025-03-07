@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 2 - Message</title>
+  <style>
+    /* Full-screen background image */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Monotype Corsiva', cursive;
+    }
+
+    .background {
+      background-image: url("file:///C:/Users/Tushar/Downloads/Wave.jpeg");
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 50px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      margin: 0;
+    }
+
+    .click-box {
+      margin-top: 20px;
+      background-color: blue;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px 20px;
+      width: 4cm;
+      height: 2cm;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <p>Heard about what happened to you today.</p>
+    <p>I hope you will get rid of the pain very soon.</p>
+    <div class="click-box" onclick="window.location.href='page3.html'">Click Here</div>
+  </div>
+</body>
+</html>
